@@ -1,0 +1,307 @@
+:root {
+
+  /**
+   * colors
+   */
+
+  --rich-black-fogra-39_50: hsla(0, 0%, 5%, 0.5);
+  --rich-blackaaaa: hsl(0, 1%, 65%);
+  --indian-yellow_10: hsla(36, 61%, 58%, 0.1);
+  --indian-yellow: hsl(36, 61%, 58%);
+  --harvest-gold: hsl(36, 66%, 53%);
+  --harvest-gold-10: hsl(36, 60%, 48%);
+  --whiteyellow: hsl(0, 0%, 89%);
+  --eerie-black-1: hsl(0, 0%, 14%);
+  --eerie-black-2: hsl(0, 0%, 12%);
+  --eerie-black-2_85: hsla(0, 0%, 12%, 0.85);
+  --eerie-black-3: hsl(0, 0%, 8%);
+  --sonic-silver: hsl(0, 0%, 44%);
+  --davys-gray: hsl(210, 9%, 31%);
+  --light-gray: hsl(0, 0%, 80%);
+  --platinum: hsl(0, 0%, 60%);
+  --black_30: hsla(0, 0%, 0%, 0.3);
+  --white_10: hsla(0, 0%, 100%, 0.1);
+  --white_30: hsla(0, 0%, 100%, 0.3 );
+  --white_50: hsla(0, 0%, 100%, 0.5);
+  --white: hsl(0, 0%, 100%);
+  --jet: hsl(0, 0%, 84%);
+  --redvin: hsl(0, 0%, 89%);
+  --azulpetro: hsl(212, 91%, 9%);
+}
+
+body {
+background-color: var(--eerie-black-1);
+font-family: Arial, sans-serif; /* Utiliza la fuente sans-serif que prefieras (por ejemplo, Arial) */
+}
+nav {
+    width: 180px;
+    background-color: var(--eerie-black-2);
+    padding-top: 75px;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    position: fixed; 
+    overflow-y: auto; 
+    
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+nav ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+}
+nav ul li:hover {
+    background-color: var(--white_10);
+}
+
+nav ul li.activo {
+    background-color:var(--white_10);
+}
+
+nav ul li i {
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white_50); /* Hereda el color del elemento superior */
+}
+.logo {
+    position: absolute;
+    top: 15px; /* Ajusta esto a lo que necesites */
+    
+    left: 35px; /* Aumenta este valor para mover el logo a la derecha */
+  }
+  
+  
+  .logo img {
+    width: 100px; /* Aumenta este valor para hacer el logo más ancho */
+    height:auto;
+
+  }
+
+.contenido {
+    margin-left: 200px; /* Debe ser igual al ancho del menú */
+    padding: 20px;
+    width: calc(100% - 200px); /* Ajusta el contenido considerando el menú */
+}
+/*titulo mi perfil*/
+.encabezadoT {
+    color:aliceblue;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-left: 200px; /* Añade un margen a la izquierda igual al ancho de tu panel de navegación */
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid black; /* Añade una línea negra debajo del encabezado */
+}
+/*Cuadro de perfil */
+.profile {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 200px); /* Ajusta esto a lo que necesites */
+    margin: 0 auto;
+    margin-left: 200px; /* Añade un margen a la izquierda igual al ancho de tu panel de navegación */
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-info {
+    border: 1px var(--rich-blackaaaa); /* Añade un marco alrededor de la info del perfil */
+    border-radius: 10px; /* Hace que las esquinas del marco sean redondeadas */
+    padding: 20px; /* Añade un poco de espacio entre el marco y el contenido del perfil */
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+    background-color: var(--eerie-black-2);
+  }
+  
+  
+  
+  .profile img {
+    border: 2px solid #333; /* Añade un marco alrededor de la info del perfil */
+    padding: 0.5px;
+    margin-left: 55px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .profile h2, .profile h3 {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+  }
+
+  .profile-info h3{
+    color:var(--white_50);
+  }
+  
+  form {
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ajusta el ancho del formulario al 100% del contenedor */
+    border: 1px var(--rich-blackaaaa); /* Añade un marco alrededor de la info del perfil */
+    border-radius: 10px; /* Hace que las esquinas del marco sean redondeadas */
+    padding: 20px; /* Añade un poco de espacio entre el marco y el contenido del perfil */
+    background-color: var(--eerie-black-2);
+  }
+  
+  form label {
+    margin-top: 10px;
+    color:var(--harvest-gold);
+    
+  } 
+  form select {
+    appearance: none; /* Oculta la flecha predeterminada en algunos navegadores */
+    -webkit-appearance: none; /* Oculta la flecha predeterminada en Chrome y Safari */
+    -moz-appearance: none; /* Oculta la flecha predeterminada en Firefox */
+    border: none;
+    border-bottom: 2px solid black;
+      }
+  
+  form input, form select {
+    margin-top: 5px;
+    padding: 5px;
+    font-weight: bold;
+    color: var(--white_50);
+    width: 100%;
+    border: none; /* Elimina el borde */
+    border-bottom: 0.5px solid black; /* Añade una línea inferior */
+    background-color: var(--black_30); /* Hace que el fondo sea transparente */
+    
+  }
+  
+  form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: linear-gradient(135deg, #FFA500, #FFD700);
+    color: var(--azulpetro);
+    border: none;
+    cursor: pointer;
+     width: 100%;
+  }
+  
+  form button:hover {
+    background-color: var(--harvest-gold-10);
+  }
+  
+  .profile-info button{
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: linear-gradient(135deg, #FFA500, #FFD700);  
+    color: var(--azulpetro);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  .profile-info button:hover{
+    background-color: var(--harvest-gold-10);
+  }
+
+  /*barra de historial*/
+.activity {
+  background-color: var(--eerie-black-2);
+  margin-left: 225px;
+  margin-top: 20px;
+  margin-bottom: 50px; /* Añade un margen inferior igual a la altura de tu marca de agua */
+  padding: 20px;
+  border: 1px var(--rich-blackaaaa);
+  border-radius: 10px;
+}
+
+.activity h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+
+.activity ul {
+  list-style-type: none;
+  padding: 0;
+  color: var(--white_50);
+}
+
+.activity ul li {
+  margin-bottom: 10px;
+}
+/*boton eliminar cuenta*/
+.delete-account {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+  }
+  
+  .delete-account h2 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between; /* Alinea los botones a ambos extremos del contenedor */
+  }
+  
+  .delete-account button {
+    padding: 10px 20px;
+    border: none;
+    color: var(--azulpetro);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button {
+    background-color: #c10202; /* Color rojo para indicar una acción peligrosa */
+  }
+
+  .delete-button:hover {
+    background-color: #a30202; /* Oscurece el color de fondo cuando se pasa el ratón por encima */
+  }
+  
+  .report-button {
+    background-color: #000097; /* Color azul para el botón de reportar error */
+  }
+  
+  .report-button:hover {
+    background-color: #030397; /* Oscurece el color de fondo cuando se pasa el ratón por encima */
+  }
+  
+  
+  
+/*marca de agua*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  footer {
+    position: fixed;
+    left: 180px; /* Debe ser igual al ancho del panel de navegación */
+    bottom: 0;
+    width: calc(100% - 170px); /* Ajusta el ancho considerando el panel de navegación */
+    background-color: var(--eerie-black-3); /* Elige el color que prefieras */
+    text-align: center;
+    padding: 5px 0; /* Reduce el relleno vertical */
+    font-size: 0.8em; /* Ajusta el tamaño de la fuente según tus necesidades */
+    color: #888; /* Ajusta el color del texto según tus necesidades */
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /*CLIENTES*/
+  .contenido{
+    color: aliceblue;
+  }
+  .contenido p{
+    color: var(--white_50);
+  }
+
+  
+  

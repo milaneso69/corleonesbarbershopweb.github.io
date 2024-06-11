@@ -1,0 +1,71 @@
+/* Estilos para las celdas de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+}
+
+/* Colores para las filas alternas */
+tr:nth-child(even) {
+    background-color: #5e5e5e;
+    color: black; /* Color de texto para filas blancas */
+}
+
+tr:nth-child(odd) {
+    background-color: #333;
+    color: white; /* Color de texto para filas negras */
+}
+
+/* Color para la fila de encabezado (thead) */
+thead th {
+    background-color: #333;
+    color: white;
+}
+/* Estilos para la imagen del producto */
+td img {
+    max-width: 100px; /* Ajusta el ancho máximo según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Alinea la imagen correctamente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+
+/* Estilos para las celdas de operaciones */
+.operaciones {
+    display: flex;
+    gap: 10px;
+}
+.operaciones button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid black; /* Agregamos un borde delgado negro */
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, border-color 0.3s; /* Transición para el color de fondo y el borde */
+}
+.operaciones button:hover {
+    background-color: #ccc;
+    border-color: #999; /* Cambiamos el color del borde al pasar el cursor */
+}
+
+/* boyon Agregar Cliente*/
+.btn-agregar button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(135deg, #FFA500, #FFD700); /* Gradiente de naranja a amarillo */
+    color: white;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-agregar button:hover {
+    background: linear-gradient(135deg, #FFD700, #FFA500); /* Cambio de colores en hover */
+}
+

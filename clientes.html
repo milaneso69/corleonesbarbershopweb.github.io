@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrativo</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="tabla.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/corleonesss-blanco.png" alt="Logo">
+          </div>       
+        <ul>
+            <a href="panel.html">
+                <li><i class="fa fa-home"></i>Ir A Inicio</li>
+            </a>
+            <a href="miperfil.html">
+                <li><i class="fa fa-user"></i>Mi Perfil</li>
+            </a>
+            <a href="clientes.html">
+                <li class="activo"><i class="fa fa-user"></i>Clientes</li>
+            </a>
+            <a href="productos.html">
+                <li><i class="fa fa-shopping-cart"></i>Productos</li>
+            </a>
+            <a href="usuarios.html">
+                <li><i class="fa fa-users"></i>Usuarios</li>
+            </a>
+            <a href="index.html">
+                <li><i class="fa fa-sign-out"></i>Cerrar sesión</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+        <h1>Clientes</h1>
+        <p>Registrar Cliente</p>
+        <div class="btn-agregar">
+            <a href="clientes-registro.html">
+                <button><i class="fa fa-plus"></i> Agregar Cliente</button>
+            </a>
+        </div>
+        <p>Gestión de clientes</p>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Operaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Registo de ejemplo -->
+                <tr>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td>Gómez</td>
+                    <td>271-123-4567</td>
+                    <td>juan.perez@utcv.edu.mx</td>
+                    <td>
+                        <div class="operaciones">
+                            <button><i class="fa fa-eye"></i> Ver</button>
+                            <button><i class="fa fa-pencil"></i> Editar</button>
+                            <button><i class="fa fa-trash"></i> Eliminar</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Luis</td>
+                    <td>García</td>
+                    <td>Rodríguez</td>
+                    <td>551-234-5678</td>
+                    <td>luisgarcia@gmail.com</td>
+                    <td>
+                        <div class="operaciones">
+                           <button><i class="fa fa-eye"></i> Ver</button>
+                           <button><i class="fa fa-pencil"></i> Editar</button>
+                           <button><i class="fa fa-trash"></i> Eliminar</button>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>Martínez</td>
+                    <td>Flores</td>
+                    <td>33-9876-5432</td>
+                    <td>anamariiia@hotmail.com</td>
+                    <td>
+                        <div class="operaciones">
+                            <button><i class="fa fa-eye"></i> Ver</button>
+                            <button><i class="fa fa-pencil"></i> Editar</button>
+                            <button><i class="fa fa-trash"></i> Eliminar</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>María</td>
+                    <td>Rodríguez</td>
+                    <td>López</td>
+                    <td>559-876-5432</td>
+                    <td>marirodriguez12@gmail.com</td>
+                    <td>
+                        <div class="operaciones">
+                            <button><i class="fa fa-eye"></i> Ver</button>
+                            <button><i class="fa fa-pencil"></i> Editar</button>
+                            <button><i class="fa fa-trash"></i> Eliminar</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>González</td>
+                    <td>Ramírez</td>
+                    <td>445-555-1234</td>
+                    <td>carlitosram@hotmail.com</td>
+                    <td>
+                        <div class="operaciones">
+                            <button><i class="fa fa-eye"></i> Ver</button>
+                            <button><i class="fa fa-pencil"></i> Editar</button>
+                            <button><i class="fa fa-trash"></i> Eliminar</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Roberto</td>
+                    <td>López</td>
+                    <td>González</td>
+                    <td>669-876-5432</td>
+                    <td>gonzalezroberto@gmail.com</td>
+                    <td>
+                        <div class="operaciones">
+                            <button><i class="fa fa-eye"></i> Ver</button>
+                            <button><i class="fa fa-pencil"></i> Editar</button>
+                            <button><i class="fa fa-trash"></i> Eliminar</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Andrea</td>
+                    <td>Ramírez</td>
+                    <td>González</td>
+                    <td>445-555-6789</td>
+                    <td>andreramirez@utcv.edu.mx</td>
+                    <td>
+                        <div class="operaciones">
+                            <button><i class="fa fa-eye"></i> Ver</button>
+                            <button><i class="fa fa-pencil"></i> Editar</button>
+                            <button><i class="fa fa-trash"></i> Eliminar</button>
+                        </div>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+    </div>
+    
+</body>
+</html>

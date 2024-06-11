@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrativo</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/corleonesss-blanco.png" alt="Logo">
+          </div>        
+        <ul>
+              
+            <a href="panel.html">
+                <li><i class="fa fa-home"></i>Ir A Inicio</li>
+            </a>
+            <a href="miperfil.html">
+                <li class="activo"><i class="fa fa-user"></i>Mi Perfil</li>
+            </a>
+            <a href="clientes.html">
+                <li><i class="fa fa-user"></i>Clientes</li>
+            </a>
+            <a href="productos.html">
+                <li><i class="fa fa-shopping-cart"></i>Productos</li>
+            </a>
+            <a href="usuarios.html">
+                <li><i class="fa fa-users"></i>Usuarios</li>
+            </a>
+            <a href="index.html">
+                <li><i class="fa fa-sign-out"></i>Cerrar sesión</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="encabezadoT">
+        <h1>Mi Perfil</h1>
+    </div>
+
+    <div class="profile">
+        <div class="profile-info">
+          <img src="images/WhatsApp Image 2024-06-09 at 6.24.58 PM.jpeg" alt="Foto de perfil">
+          <button type="button">
+            <i class="fa fa-camera" aria-hidden="true"></i> Editar Foto
+          </button>
+          <h2>Aaron Villalobos Ramirez</h2>
+          <h3>Desarrollador & Administrador</h3>
+        </div>
+      
+        <form action="/update-profile" method="post">          <label for="fullname">Nombre completo:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Aaron Ramirez Ramirez">
+          
+          <label for="genero">Género</label>
+          <select name="genero" id="genero">
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+          </select>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="aaronarribaelame@gmail.com">
+      
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" placeholder="********">
+      
+          <label for="phone">Número de teléfono:</label>
+          <input type="tel" id="phone" name="phone" placeholder="271-283-****">
+      
+          <label for="pais">País</label>
+<select name="pais" id="pais">
+  <option value="mexico">México</option>
+  <option value="estados_unidos">Estados Unidos</option>
+  <option value="canada">Canadá</option>
+  <option value="espana">España</option>
+  <option value="argentina">Argentina</option>
+  <option value="colombia">Colombia</option>
+  <option value="peru">Perú</option>
+  <option value="venezuela">Venezuela</option>
+  <option value="chile">Chile</option>
+  <option value="ecuador">Ecuador</option>
+  <option value="guatemala">Guatemala</option>
+  <option value="cuba">Cuba</option>
+  <option value="bolivia">Bolivia</option>
+  <option value="honduras">Honduras</option>
+  <option value="paraguay">Paraguay</option>
+  <option value="uruguay">Uruguay</option>
+  <option value="nicaragua">Nicaragua</option>
+  <option value="costa_rica">Costa Rica</option>
+  <option value="puerto_rico">Puerto Rico</option>
+  <option value="panama">Panamá</option>
+  <option value="el_salvador">El Salvador</option>
+</select>
+      
+          <button type="button">
+            <i class="fa fa-retweet" aria-hidden="true"></i> Actualizar Datos
+        </form>
+      </div>
+
+      <div class="activity">
+        <h2>Historial de Actividades</h2>
+        <ul>
+          <li>Cambio de contraseña - 12 de Junio, 2024</li>
+          <li>Reservó una cita para un corte de cabello - 10 de Junio, 2024</li>
+          <li>Actualizó la foto de perfil - 8 de Junio, 2024</li>
+          <!-- Más elementos de la lista según sea necesario -->
+        </ul>
+        <div class="delete-account">
+            <h2>Eliminar Cuenta</h2>
+            <div class="buttons">
+              <button type="button" class="delete-button">Eliminar Cuenta</button>
+              <button type="button" class="report-button">Reportar Error</button>
+            </div>
+          </div>
+          
+      
+      
+      
+
+      <footer>
+        <p>© 2024 CorleonesBarbershop. Todos los derechos reservados.</p>
+      </footer>
+      
+
+</body>
+
+</html>

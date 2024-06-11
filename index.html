@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Corleones</title>
+</head>
+<body>
+<!--Barra-->
+    <div class="head">
+        <div class="logo">
+            <a href="#">
+                <img src="src/logo.png" alt="Logo" style="max-height: 80px;">
+            </a>
+        </div>
+
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#citas">Citas</a>
+            <a href="#contacto">Contacto</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+    </div>
+<!--Inicio-->
+
+    <header id="inicio" class="content header">
+        <h1 class="title">Corleones</h1>
+        <h3>Barber Shop</h3>
+        <p>Mas que una barberia, una experiencia</p>
+    </header>
+    
+
+    <!--Servicios-->
+    <section id="servicios" class="content saw">
+        <h1 class="title">Servicios</h1>
+        <p>En Corleones ofrecemos difentes servicios, como corte de cabello y barba, ademas de una coleccion de ceras para el cabello. ¡Visitanos y conoce nuestros servicios!</p>
+        <div class="box-container">
+            <div class="box">
+                <i class=></i>
+                <h3>Corte de cabello</h3>
+                <p>Luce un look elegante Precio: 150$</p>
+            </div>
+            <div class="box">
+                <i class=></i>
+                <h3>Corte de Barba</h3>
+                <p>Para esculpir tu imagen Precio 180$</p>
+            </div>
+            <div class="box">
+                <i class=></i>
+                <h3>Limpieza facial</h3>
+                <p>Rejuvenece tu piel</p>
+                <p>Precio: 200$</p>
+            </div>
+            <div class="box">
+                <i class=></i>
+                <h3>Ceras para cabello</h3>
+                <p>Para moldear tu cabello</p>
+                <p>Precio: 100$</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Cita-->
+    <section id="citas" class="content appointment">
+        <h1 class="title">Aparta tu cita</h1>
+        <form action="" class="appoin-form">
+            <div class="input-wrapper">
+                <input type="text" name="Nombre" placeholder="Nombre completo" required class="input-field">
+                <input type="email" name="Correo" placeholder="Correo electronico" required class="input-field">
+            </div>
+            <div class="input-wrapper">
+                <input type="number" name="Telefono" placeholder="Numero telefonico" required class="input-field">
+                <select name="categoria" class="input-field">
+                <option value="Selecciona una categoria">Selecciona una categoria</option>
+                <option value="Corte">Corte de cabello</option>
+                <option value="Barba">Perfilado de barba</option>
+                <option value="producto">Cera Para cabello</option>
+                <option value="Limpieza">Limpieza facial</option>
+            </select>
+            </div>
+            <div class="input-wrapper date-time">
+                <input type="date" name="fecha" required class="input-field date">
+                <input type="time" name="Hora" required class="input-field time">
+            </div>
+            <button type="submit" class="form-btn">
+                <span class="span">Agendar cita</span>
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </button>
+            </form>
+    </section>
+
+    <!--Contacto-->
+    <section id="contacto" class="content contact">
+        <h1 class="title">Contáctanos</h1>
+        <p>Teléfono</p>
+        <p>271-195-4505</p>
+        <p>Horarios</p>
+        <p>Lunes a Viernes de 1 a 8 pm</p>
+        <p>Dirección</p>
+        <p>Calle 17, entre Avenidas 2 y 4, Colonia Centro, Córdoba.</p>
+    </section>
+
+</body>
+</html>

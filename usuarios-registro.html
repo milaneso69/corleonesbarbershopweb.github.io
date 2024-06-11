@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrativo</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/corleonesss-blanco.png" alt="Logo">
+          </div>       
+        <ul>
+            <a href="panel.html">
+                <li><i class="fa fa-home"></i>Ir A Inicio</li>
+            </a>
+            <a href="miperfil.html">
+                <li><i class="fa fa-user"></i>Mi Perfil</li>
+            </a>
+            <a href="clientes.html">
+                <li><i class="fa fa-user"></i>Clientes</li>
+            </a>
+            <a href="productos.html">
+                <li><i class="fa fa-shopping-cart"></i>Productos</li>
+            </a>
+            <a href="usuarios.html">
+                <li class="activo"><i class="fa fa-users"></i>Usuarios</li>
+            </a>
+            <a href="index.html">
+                <li><i class="fa fa-sign-out"></i>Cerrar sesión</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+        <h1>Nuevo usuario</h1>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidoP">Apellido Paterno:</label>
+                <input type="text" id="apellidoP" name="apellidoP" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidoM">Apellido Materno:</label>
+                <input type="text" id="apellidoM" name="apellidoM" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="btn-agregar">
+                <button type="submit">Agregar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
